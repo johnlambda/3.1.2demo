@@ -1,5 +1,3 @@
-# users, comments, posts
-
 
 class User:
     def __init__(self, user_id, num_posts, reputation, mod_status, can_post):
@@ -17,7 +15,7 @@ class User:
 
     @staticmethod
     def post_topic_static(title, tags, description, author):
-        topic = Topic(title, tags, description, author)
+        topic = Topic('hard-coded topic', tags, description, author)
         return topic
 
 
